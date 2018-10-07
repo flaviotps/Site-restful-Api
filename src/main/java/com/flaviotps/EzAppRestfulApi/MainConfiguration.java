@@ -13,7 +13,7 @@ public class MainConfiguration {
 
     @Bean
     public BasicDataSource dataSource() throws URISyntaxException {
-        URI dbUri = new URI("DATA-BASE-PATH");
+        URI dbUri = new URI("");
 
         String username = dbUri.getUserInfo().split(":")[0];
         String password = dbUri.getUserInfo().split(":")[1];
